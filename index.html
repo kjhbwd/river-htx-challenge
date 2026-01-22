@@ -6,15 +6,45 @@
     <title>River x HTX Synergy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #020617; color: white; overflow-x: hidden; }
-        .river-gradient { background: linear-gradient(90deg, #06b6d4, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        @keyframes flow { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
+        .river-bg { background: linear-gradient(270deg, #020617, #083344, #020617); background-size: 400% 400%; animation: flow 10s ease infinite; }
+        .neon-glow { text-shadow: 0 0 10px rgba(34, 211, 238, 0.5), 0 0 20px rgba(34, 211, 238, 0.3); }
     </style>
 </head>
-<body class="font-sans">
-    <section class="h-screen flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 river-gradient">The Flow of Freedom</h1>
-        <p class="text-xl md:text-2xl text-slate-400 mb-8 max-w-2xl">River meets HTX: $8M Strategic Investment for Chain Abstraction.</p>
-        <button class="bg-cyan-500 hover:bg-cyan-400 text-black font-bold py-3 px-8 rounded-full transition shadow-lg shadow-cyan-500/20">Join the River Sanctuary</button>
-    </section>
+<body class="river-bg text-white font-sans min-h-screen">
+    <main class="flex flex-col justify-center items-center text-center px-6 pt-20">
+        <div class="mb-4 px-4 py-1 border border-cyan-500/30 rounded-full text-cyan-400 text-sm bg-cyan-950/20">
+            $8M Strategic Investment Synergies
+        </div>
+        <h1 class="text-6xl md:text-8xl font-black mb-6 neon-glow bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">
+            RIVER <span class="text-white">x</span> HTX
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-300 mb-12 max-w-3xl leading-relaxed">
+            The Flow of Freedom: Integrating **TRON's Liquidity** with **River's Chain Abstraction** for the next generation of Economic Freedom.
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-6 max-w-5xl w-full mb-16">
+            <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-cyan-500/50 transition-all group">
+                <div class="text-3xl mb-4 group-hover:scale-110 transition">🔗</div>
+                <h3 class="text-xl font-bold mb-2">Connectivity</h3>
+                <p class="text-slate-400 text-sm">Seamless Bridge between BTC, ETH and TRON via River Flow.</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-all group">
+                <div class="text-3xl mb-4 group-hover:scale-110 transition">🛡️</div>
+                <h3 class="text-xl font-bold mb-2">Trust</h3>
+                <p class="text-slate-400 text-sm">Powered by Justin Sun's Ecosystem and TRON Infrastructure.</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-indigo-500/50 transition-all group">
+                <div class="text-3xl mb-4 group-hover:scale-110 transition">💰</div>
+                <h3 class="text-xl font-bold mb-2">Yield</h3>
+                <p class="text-slate-400 text-sm">Experience satUSD: The world's most accessible yield-bearing asset.</p>
+            </div>
+        </div>
+
+        <a href="https://forms.gle/Rmk21yuQwVCn28b49" target="_blank" 
+           class="bg-cyan-500 hover:bg-cyan-400 text-black font-black py-4 px-12 rounded-full text-lg transition-transform hover:scale-105 shadow-[0_0_20px_rgba(6,182,212,0.5)]">
+            JOIN THE SANCTUARY
+        </a>
+    </main>
 </body>
 </html>
